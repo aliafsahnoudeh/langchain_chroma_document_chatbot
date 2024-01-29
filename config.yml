@@ -1,0 +1,5 @@
+default:
+  limit: 10
+
+openai:
+  openai_model: "gpt-4"

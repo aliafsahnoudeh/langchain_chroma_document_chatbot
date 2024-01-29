@@ -1,0 +1,111 @@
+[tool.poetry]
+name = "langchain_chroma_document_chatbot"
+version = "0.1.0"
+description = ""
+authors = [
+
+]
+maintainers = [
+
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+fastapi = "^0.100.0"
+uvicorn = { version = "^0.22.0", extras = ["standard"] }
+gunicorn = "^21.2.0"
+pydantic = "^2"
+pydantic-settings = "^2"
+yarl = "^1.9.2"
+ujson = "^5.8.0"
+aiofiles = "^23.1.0"
+httptools = "^0.6.0"
+dependency-injector = "^4.41.0"
+psycopg2-binary = "^2.9.9"
+mypy = "^1.6.1"
+pypdf = "^3.17.1"
+chromadb = "0.4.15"
+google-cloud-logging = "^3.8.0"
+langchainhub = "^0.1.14"
+langchain-core = "^0.1.0"
+pandas = "^2.2.0"
+simsimd = "^3.6.3"
+langchain = "0.1.1"
+tiktoken = "0.5.2"
+langchain-community = "0.0.13"
+langchain-openai = "0.0.5"
+openai = "1.10.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.1"
+flake8 = "~4.0.1"
+mypy = "^1.1.1"
+isort = "^5.11.4"
+pre-commit = "^3.0.1"
+wemake-python-styleguide = "^0.17.0"
+black = "^22.12.0"
+autoflake = "^1.6.1"
+pytest-cov = "^4.0.0"
+anyio = "^3.6.2"
+pytest-env = "^0.8.1"
+httpx = "^0.23.3"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+src_paths = ["langchain_chroma_document_chatbot",]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+allow_subclassing_any = true
+allow_untyped_calls = true
+pretty = true
+show_error_codes = true
+implicit_reexport = true
+allow_untyped_decorators = true
+warn_unused_ignores = false
+warn_return_any = false
+namespace_packages = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    "ignore::DeprecationWarning",
+    "ignore:.*unclosed.*:ResourceWarning",
+]
+env = [
+    "langchain_chroma_document_chatbot_ENVIRONMENT=pytest",
+]
+
+[fastapi-template.options]
+project_name = "langchain_chroma_document_chatbot"
+api_type = "rest"
+enable_redis = "None"
+enable_rmq = "None"
+ci_type = "github"
+enable_migrations = "None"
+enable_taskiq = "None"
+enable_kube = "None"
+kube_name = "ai-service"
+enable_routers = "True"
+enable_kafka = "None"
+enable_loguru = "None"
+traefik_labels = "None"
+add_dummy = "None"
+orm = "none"
+self_hosted_swagger = "True"
+prometheus_enabled = "None"
+sentry_enabled = "True"
+otlp_enabled = "None"
+pydanticv1 = "None"
+gunicorn = "True"
+add_users = "None"
+cookie_auth = "None"
+jwt_auth = "None"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
