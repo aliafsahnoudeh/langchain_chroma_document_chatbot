@@ -8,12 +8,13 @@ from langchain.prompts import PromptTemplate
 from langchain.schema import Document, StrOutputParser  # type: ignore
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.base import VectorStoreRetriever
-from langchain_chroma_document_chatbot.services.logger import logger
-from langchain_chroma_document_chatbot.settings import settings
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import Chroma
 from langchain_core.runnables import RunnablePassthrough  # type: ignore
 from langchain_openai.chat_models import ChatOpenAI
+
+from langchain_chroma_document_chatbot.services.logger import logger
+from langchain_chroma_document_chatbot.settings import settings
 
 resources = [
     "./qa-resources/music-theory.pdf",

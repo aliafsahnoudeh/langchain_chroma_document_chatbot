@@ -106,3 +106,21 @@ By default it runs:
 -   flake8 (spots possible bugs);
 
 You can read more about pre-commit here: https://pre-commit.com/
+
+## Vector store data
+
+This chatbot uses "Music Theory Book" by Mark Andrew Cook, downloaded from [here](https://2012books.lardbucket.org/pdfs/music-theory.pdf).
+<br>
+
+This book is licensed under a Creative Commons by-nc-sa 3.0 (http://creativecommons.org/licenses/by-nc-sa/
+3.0/) license. See the license for more details, but that basically means you can share this book as long as you
+credit the author (but see below), don't make money from it, and do make it available to everyone else under the
+same terms.
+This book was accessible as of December 29, 2012, and it was downloaded then by Andy Schmitz
+(http://lardbucket.org) in an effort to preserve the availability of this book.
+Normally, the author and publisher would be credited here. However, the publisher has asked for the customary
+Creative Commons attribution to the original publisher, authors, title, and book URI to be removed. Additionally,
+per the publisher's request, their name has been removed in some passages. More information is available on this
+project's attribution page (http://2012books.lardbucket.org/attribution.html?utm_source=header).
+For more information on the source of this book, or why it is available for free, please see the project's home page
+(http://2012books.lardbucket.org/). You can browse or download additional books there.
